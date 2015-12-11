@@ -120,7 +120,7 @@ def test():
 ```
 
    - http://127.0.0.1:8000/max/test/test
-
+       
 ### API 만들기
 
 #### max 값 api
@@ -191,6 +191,7 @@ def test():
         ret = response.json(rest_result)
         return ret
 
+   => 127.0.0.1:8000/max/test2/test?id=2303
 ```
 
 #### [연습] min 값 구하는 api 만들기
@@ -249,4 +250,6 @@ def test():
         rest_result.append(json_tmp['1'])
         ret = response.json(rest_result)
         return ret
+        
+   => 127.0.0.1:8000/min/min/test?id=2303
 ```
